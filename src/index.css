@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --color-vitalia-primary: #334155;
+  --color-vitalia-light: #f1f5f9;
+  --color-vitalia-deep: #0f172a;
+  --color-vitalia-accent: #64748b;
+  --color-vitalia-dark: #0f172a;
+  --color-vitalia-gray: #f8fafc;
+  --color-osirix-primary: #334155;
+  --color-osirix-light: #f1f5f9;
+  --color-osirix-deep: #0f172a;
+  --color-osirix-accent: #64748b;
+  --color-osirix-dark: #0f172a;
+  --color-osirix-gray: #f8fafc;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    color: #0f172a;
+    background-color: #f1f5f9;
+  }
+}
+
+/* Print layout for Ordonnances & Medical Reports */
+@media print {
+  body {
+    background-color: #ffffff !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .printable-document {
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Remix OSIRIX Clinique Médicale",
+  "description": "Plateforme hospitalière intégrée de gestion clinique, coordination médicale et suivi des patients.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
